@@ -1,0 +1,57 @@
+{
+  "name": "__MSG_extName__",
+  "default_locale": "en",
+  "manifest_version": 2,
+  "version": "0.493",
+  "version_name": "2016.09.21-release",
+  "offline_enabled": true,
+  "app": {
+    "background": {
+      "page": "app_main.html"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": [
+    "gcm",
+    "notifications",
+    "clipboardRead",
+    "accessibilityFeatures.read",
+    "identity",
+    {"socket": ["tcp-connect", "tcp-listen", "udp-bind", "udp-send-to", "resolve-host", "resolve-proxy"]},
+    "identity.email",
+    "unlimitedStorage",
+    {"fileSystem": ["write"]},
+    "https://clients2.google.com/",
+    "clipboardWrite",
+    "alarms",
+    "storage",
+    "overrideEscFullscreen",
+    "fullscreen",
+    "audioCapture"]
+,
+  "requirements": {
+    "3D": {
+      "features": ["webgl"]
+    }
+  },
+  "kiosk_enabled": true,
+  "import": [{"id": "mfaihdlpglflfgpfjcifdjdjcckigekc"}],
+  "file_handlers": {"arc.types": {"types": ["vnd.soundcloud/search_item", "audio/*", "vnd.soundcloud.playable/playlist", "vnd.soundcloud/user"]}},
+  
+  
+  "arc_metadata": {
+    "apkList": [
+      "soundcloud.apk"
+    ],
+    "enableExternalDirectory": false,
+    "formFactor": "tablet",
+    "name": "SoundCloud",
+    "orientation": "landscape",
+    "packageName": "com.soundcloud.android",
+    "resize": "reconfigure",
+    "usePlayServices": ["gcm", "plus"]
+  }
+}
